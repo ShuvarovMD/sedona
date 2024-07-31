@@ -14,12 +14,36 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.main-page {
+  flex-grow: 1;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.hotels-page {
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
@@ -52,16 +76,41 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .page-header .button {
   font-size: 16px;
   line-height: 20px;
 }
+.navigation,
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
 
 .navigation-link {
   color: inherit;
   text-decoration: none;
+}
+
+.main-promo {
+  height: 485px;
+  background-color: #fff;
+  background-image: url("../img/background/index-background.jpg");
+}
+
+.advantages-list,
+.advantages-sublist {
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-lead {
@@ -144,11 +193,20 @@ body {
   line-height: 26px;
 }
 
+.page-footer {
+  background-color: #ffffff;
+}
+
 .page-footer-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+}
+
+.social-list {
+  padding: 0;
+  margin: 0;
 }
 
 .first-screen {
@@ -163,9 +221,37 @@ body {
   line-height: 78px;
 }
 
+.first-screen .container {
+  width: 1060px;
+}
+
 .breadcrumds-list {
   font-size: 16px;
   line-height: 21px;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-form fieldset {
+  padding: 0;
+}
+.filter-form fieldset:not(.filter-item-price) {
+  width: 150px;
+}
+
+.filter-item-price {
+  width: 287px;
+}
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item-buttons {
+  width: 160px;
 }
 
 .filter legend {
@@ -238,4 +324,19 @@ body {
 .count-form {
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-sort,
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.newsletter {
+  text-align: center;
 }
