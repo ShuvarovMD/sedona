@@ -29,6 +29,16 @@ body {
   color: #333333;
   background-color: #F2F2F2;
 }
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);;
+}
 
 .main-page {
   flex-grow: 1;
@@ -71,6 +81,10 @@ body {
   text-transform: none;
 }
 
+.button--more {
+  margin-bottom: 30px;
+}
+
 .page-header {
   font-size: 20px;
   line-height: 26px;
@@ -87,18 +101,38 @@ body {
 .page-footer .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
 }
 
+.navigation .logo {
+  margin-right: 30px;
+}
+
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-right: auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   color: inherit;
   text-decoration: none;
+}
+
+.navigation-search,
+.navigation-favorites {
+  padding: 25px 12px;
+}
+
+.navigation-favorites {
+  margin-right: 20px;
 }
 
 .main-promo {
@@ -111,6 +145,7 @@ body {
 .advantages-sublist {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .advantages-lead {
@@ -194,6 +229,8 @@ body {
 }
 
 .page-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
   background-color: #ffffff;
 }
 
@@ -205,11 +242,21 @@ body {
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+}
+
+.social-link {
+  padding: 15px;
+  display: block;
 }
 
 .first-screen {
+  padding-top: 35px;
+  padding-bottom: 83px;
   color: #ffffff;
   background-image: url("../img/background/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -217,6 +264,8 @@ body {
 }
 
 .first-screen h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 60px;
   line-height: 78px;
 }
@@ -228,11 +277,13 @@ body {
 .breadcrumds-list {
   font-size: 16px;
   line-height: 21px;
+  list-style-type: none;
 }
 
 .filter-form {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .filter-form fieldset {
   padding: 0;
@@ -248,10 +299,14 @@ body {
 .filter-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .filter-item-buttons {
   width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .filter legend {
@@ -274,6 +329,12 @@ body {
   line-height: 23px;
   color: #ffffff;
   background-color: transparent;
+}
+.results-list {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .results select {
@@ -311,11 +372,18 @@ body {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
   font-size: 20px;
   line-height: 26px;
+  list-style-type: none;
 }
 
 .pagination-link {
+  display: block;
+  padding: 15px 22px;
   color: #ffffff;
   background-color: #83B3D3;
   text-decoration: none;
@@ -332,9 +400,34 @@ body {
   justify-content: space-between;
 }
 
+.pagination-nav {
+  align-items: center;
+}
+
 .results {
   width: 1060px;
+  padding-top: 44px;
   margin: 0 auto;
+}
+
+.results .title {
+  margin: 0;
+}
+
+.results-view-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.results-view-link {
+  display: block;
+  width: 16px;
+  height: 14px;
+  padding: 17px;
 }
 
 .newsletter {

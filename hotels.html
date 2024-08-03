@@ -90,8 +90,12 @@
               <legend>Стоимость, ₽:</legend>
               <label>от <input name="price-from" value="0" type="number"></label>
               <label>до <input name="price-to" value="9000" type="number"></label>
-              <button class="filter-handle filter-handle--min" type="button">Ручка минимальной цены</button>
-              <button class="filter-handle filter-handle--max" type="button">Ручка максимальной цены</button>
+              <button class="filter-handle filter-handle--min" type="button">
+                <span class="visually-hidden">Ручка минимальной цены</span>
+              </button>
+              <button class="filter-handle filter-handle--max" type="button">
+                <span class="visually-hidden">Ручка максимальной цены</span>
+              </button>
             </fieldset>
             <div class="filter-item-buttons">
               <button class="button button--submit" type="submit">Применить</button>
@@ -115,13 +119,19 @@
         </form>
         <ul class="results-view-list">
           <li class="results-view-item">
-            <span class="results-view-link">Карточками</span>
+            <span class="results-view-link">
+              <span class="visually-hidden">Карточками</span>
+            </span>
           </li>
           <li class="results-view-item">
-            <a class="results-view-link" href="#">Слайдами</a>
+            <a class="results-view-link" href="#">
+              <span class="visually-hidden">Слайдами</span>
+            </a>
           </li>
           <li class="results-view-item">
-            <a class="results-view-link" href="#">Списком</a>
+            <a class="results-view-link" href="#">
+              <span class="visually-hidden">Списком</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -185,7 +195,7 @@
           <p class="results-item-rating">Рейтинг: 9,2</p>
         </li>
       </ul>
-      <button class="button button--submit" type="button">Загрузить ещё</button>
+      <button class="button button--submit button--more" type="button">Загрузить ещё</button>
       <h3 class="visually-hidden">Список страниц</h3>
       <div class="pagination-nav">
         <ul class="pagination-list">
