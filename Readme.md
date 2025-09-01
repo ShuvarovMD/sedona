@@ -1,7 +1,8 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Sedona»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [Шуваров Михаил](https://htmlacademy.ru/profile/id1967867).
+* Наставник: `Отсутствует`.
+* Сайт: https://shuvarovmd.github.io/sedona/
 
 ---
 
