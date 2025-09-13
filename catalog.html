@@ -79,7 +79,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter__group">
+              <fieldset class="filter__group filter__group--slider">
                 <legend class="filter__title">Тип жилья:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
@@ -112,36 +112,40 @@
                   </button>
                 </div>
               </fieldset>
-              <button class="button button--secondary" type="submit">Применить</button>
-              <button class="button button--transparent" type="reset">Сбросить</button>
+              <div class="filter__buttons">
+                <button class="button button--secondary" type="submit">Применить</button>
+                <button class="button button--transparent" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
           <!-- /.filter -->
         </div>
         <section class="catalog">
-          <h2 class="catalog__title title">Найдено гостиниц: 38</h2>
-          <select class="sort" name="sort" aria-label="Сортировка гостиниц">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <ul class="catalog__view view">
-            <li class="view__item">
-              <a class="view__link view__link--active view__link--tile" href="./catalog.html?view=tile">
-                <span class="visually-hidden">Плитка</span>
-              </a>
-            </li>
-            <li class="view__item">
-              <a class="view__link view__link--card" href="./catalog.html?view=card">
-                <span class="visually-hidden">Карточки</span>
-              </a>
-            </li>
-            <li class="view__item">
-              <a class="view__link view__link--list" href="./catalog.html?view=list">
-                <span class="visually-hidden">Список</span>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title title">Найдено гостиниц: 38</h2>
+            <select class="sort" name="sort" aria-label="Сортировка гостиниц">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <ul class="catalog__view view">
+              <li class="view__item">
+                <a class="view__link view__link--active view__link--tile" href="./catalog.html?view=tile">
+                  <span class="visually-hidden">Плитка</span>
+                </a>
+              </li>
+              <li class="view__item">
+                <a class="view__link view__link--card" href="./catalog.html?view=card">
+                  <span class="visually-hidden">Карточки</span>
+                </a>
+              </li>
+              <li class="view__item">
+                <a class="view__link view__link--list" href="./catalog.html?view=list">
+                  <span class="visually-hidden">Список</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="catalog__list">
             <li class="catalog__card card">
               <h3 class="card__title subtitle">Amara Resort & Spa</h3>
@@ -235,7 +239,7 @@
       </main>
       <!-- /.catalog-page -->
       <footer class="site-footer">
-        <ul class="social">
+        <ul class="social" aria-label="Социальные сети">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Вконтакте</span>
